@@ -6,7 +6,7 @@
 
 # ScreenShots Below 👇
 
-![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/CSS3%20Tooltip/Images/Tooltip.gif)
+![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/CSS3%20Tooltip/Images/Css%20Tooltip.png)
 
 ## 2. CSS3 Emoji Art
 - Cool looking emoji's
