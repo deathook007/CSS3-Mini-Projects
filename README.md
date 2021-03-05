@@ -7,7 +7,6 @@
 # ScreenShots Below 👇
 
 ![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/CSS3%20Emoji%20Art/Emoji%20Arts.png)
-![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/CSS3%20Emoji%20Art/Emoji%20Arts%20-%20Responsibe.png)
 
 
 ## 2. CSS3 Tooltip
