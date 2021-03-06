@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #222831;
+    --fcolor: rgb(159, 239, 0);
+    --bcolorbg: #00adb5;
+    --fcolorbg: #393e46;
+    --bcolor: #eeeeee;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor);
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+    /* How much far is the user from object - give depth */
+    perspective: 800px;
+}
+
+.button {
+    height: 150px;
+    width: 350px;
+    position: relative;
+    /*For3Deffect*/
+    transform-style: preserve-3d;
+    /*Forsmootheffectintimeperiod*/
+    transition: transform 300ms ease-in-out;
+    -webkit-transition: transform 300ms ease-in-out;
+    -moz-transition: transform 300ms ease-in-out;
+    -ms-transition: transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
+    /*Formakingbox3Deffectinbutton*/
+    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+    -moz-transform: translateZ(-75px);
+    -ms-transform: translateZ(-75px);
+    -o-transform: translateZ(-75px);
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /*Important*/
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.front-face {
+    color: var(--fcolor);
+    background-color: var(--fcolorbg);
+    border: 6px solid var(--fcolor);
+    /* For 3D effect we should use z axis */
+    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+    -moz-transform: translateZ(75px);
+    -ms-transform: translateZ(75px);
+    -o-transform: translateZ(75px);
+}
+
+.back-face {
+    color: var(--bcolor);
+    background-color: var(--bcolorbg);
+    border: 6px solid var(--bcolor);
+    /* For 3D effect we should use z axis */
+    transform: rotateX(90deg) translateZ(75px);
+    -webkit-transform: rotateX(90deg) translateZ(75px);
+    -moz-transform: rotateX(90deg) translateZ(75px);
+    -ms-transform: rotateX(90deg) translateZ(75px);
+    -o-transform: rotateX(90deg) translateZ(75px);
+}
+
+.button:hover {
+    /* To handel size default translate in y axis since axis changed due to effect*/
+    transform: rotateX(-90deg) translateY(75px);
+    -webkit-transform: rotateX(-90deg) translateY(75px);
+    -moz-transform: rotateX(-90deg) translateY(75px);
+    -ms-transform: rotateX(-90deg) translateY(75px);
+    -o-transform: rotateX(-90deg) translateY(75px);
+}
