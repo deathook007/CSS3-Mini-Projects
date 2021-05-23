@@ -6,7 +6,7 @@
 - Dark theme stylling
 - All browser support :)
 
-## ScreenShots Below 👇
+ScreenShots Below 👇
 
 ![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/3D%20Button/Hnet.com-image.gif)
 
@@ -16,7 +16,7 @@
 - Christmas + Google theme !
 - Responsive and attractive UI
 
-## ScreenShots Below 👇
+ScreenShots Below 👇
 
 ![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/Animated%20Loading%20Spinner/Hnet-image.gif)
 
@@ -25,7 +25,7 @@
 - Cool looking emoji's
 - Responsive and attractive UI
 
-## ScreenShots Below 👇
+ScreenShots Below 👇
 
 ![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/CSS3%20Emoji%20Art/Emoji%20Arts.png)
 
