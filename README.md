@@ -3,7 +3,7 @@
 ## 1. 3D Button 
 - Cool 3D button in css3
 - Responsive and attractive UI
-- Dark theme stylling
+- Dark theme design.
 - All browser support :)
 
 ScreenShots Below 👇
@@ -22,7 +22,7 @@ ScreenShots Below 👇
 
 
 ## 3. CSS3 Emoji Art
-- Cool looking emoji's
+- Cool looking emoji's.
 - Responsive and attractive UI
 
 ScreenShots Below 👇
