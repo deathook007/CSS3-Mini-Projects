@@ -1,5 +1,5 @@
 ![Screenshot-1](https://github.com/deathook007/CSS3-Mini-Projects/blob/main/Css3%20Mini%20Projects.jpg)
-# CSS3 mini Projects 🌱
+# CSS3 mini Projects ☘️
 
 ## 1. 3D Button 
 - Cool 3D button in css3
