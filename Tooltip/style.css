@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Images/77777.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tooltip {
+    background-image: url(./Images/Profile_Pic\ removebg.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 10px 10px #fff;
+    width: 450px;
+    height: 450px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.tooltip::before,
+.tooltip::after {
+    --scale: 0;
+    --arrow-size: 20px;
+    --color: #00adb5;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    -webkit-transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    -moz-transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    -ms-transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    -o-transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: transform 150ms;
+    transform-origin: bottom center;
+    -webkit-transition: transform 150ms;
+    -moz-transition: transform 150ms;
+    -ms-transition: transform 150ms;
+    -o-transition: transform 150ms;
+}
+
+.tooltip::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+    content: attr(data-tooltip);
+    background: var(--color);
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    word-spacing: 5px;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    opacity: 0.95;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+    --scale: 1;
+}
+
+.tooltip::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+    content: '';
+    border: 1rem solid transparent;
+    border-top-color: #00adb5;
+    transform-origin: top center;
+}
